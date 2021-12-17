@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Read Only by HTML5 UP</title>
+		<title>Mark Harris Data Scientist</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,15 +17,14 @@
 			<section id="header">
 				<header>
 					<span class="image avatar"><img src="images/Headshot.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Willis Corto</a></h1>
-					<p>I got reprogrammed by a rogue AI<br />
-					and now I'm totally cray</p>
+					<h1 id="logo"><a href="#">Mark C Harris, PhD</a></h1>
+					<p style="font-size: 150%;">Data Scientist</p>
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Things I Can Do</a></li>
-						<li><a href="#three">A Few Accomplishments</a></li>
+						<li><a href="#one" class="active">About Me</a></li>
+						<li><a href="#two">Projects</a></li>
+						<li><a href="#three">Skills</a></li>
 						<li><a href="./harris_mark_resume.pdf">Download Resume</a></li>
 					</ul>
 				</nav>
@@ -47,65 +46,90 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
+									<img src="images/banner-new.jpg" alt="" />
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Read Only</h2>
-										<p>Just an incredibly simple responsive site<br />
-										template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
+										<h2>Welcome</h2>
+										<p>About Me</p>
 									</header>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+									<p>As a data scientist with a background in physics and math, and as a prior educator, I leverage my experience with rigorous reasoning, experimental planning, data analysis, and communication to thoroughly understand and explain problems.  I adopt a big-picture point of view that empowers me to anticipate pitfalls and devise comprehensive problem-solving strategies.</p>
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
-									</ul>
+						<section id="two">
+							<div class="container">
+								<h3>Projects</h3>
+								<p>A display of my personal style and learning experiences as I take on data science problems.</p>
+								<div class="features">
+									<article>
+										<a href="https://github.com/MarkCHarris/ga-capstone-snow-vision" class="image"><img src="images/3.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Automatic Identification of Snow in Images using Machine Vision</h4>
+											<p>In this project, a Tensorflow pipeline is built that is capable of training convolutional neural nets using 100,000 images with or without falling snow. See below for details on the source of the data. The process is carried out on a personal computer with a CUDA-enabled GPU. The models are evaluated according to precision, recall, f1 score, and accuracy. Multiple snow classification thresholds are considered to optimize and tune the model to maximize the desired metric. Finally, a streamlit app is built that can run locally and use one of the saved models to predict whether an uploaded image has falling snow.</p>
+										</div>
+									</article>
+									<article>
+										<a href="https://github.com/MarkCHarris/food_deserts_chicago" class="image"><img src="images/food_deserts.png" alt="" /></a>
+										<div class="inner">
+											<h4>Food Desert Analysis using Regression, Classification, and Geographical Data</h4>
+											<p>I collaborated with two colleagues using Git for this project to analyze food deserts in Chicago. Our goal was to make recommendations for providing access to healthy foods within food deserts by means of local markets or mobile food trucks. We studied food deserts in Chicago using geographical analysis and analyzed their association with health problems via regression and classification.
+											</p>
+										</div>
+									</article>
+									<article>
+										<a href="https://github.com/MarkCHarris/subreddit-nlp-classification" class="image"><img src="images/reddit_matrix.png" alt="" /></a>
+										<div class="inner">
+											<h4>Natural Language Processing and Clasification of Reddit Posts</h4>
+											<p>This project aims to shed light on the differences between scientific discourse and discourse among broader audiences with demonstrated enthusiam for human progress. To achieve this, comments are collected from two very popular subreddits, Science and Futurology, using Pushsift's API. After removal of deleted comments and posts by moderator bots, natural language processing methods are used to examine top words and trends in each subreddit. Finally, multiple supervised classification methods are used to identify posts from each subreddit, testing how well different machine learning algorithms are able to distinguish between posts from these two subreddits. The models are evaluated using precision, recall, F1 score, ROC AUC. The baseline scare is 50%, since I models are fit on a 50/50 split of comments from each subreddit. This combination ensures that the best-scoring algorithms are equally successful when labelling posts as either Science or Futurology, while imbalanced algorithms are rejected. Words rated as most important by the most successful algorithms are analyzed for further insights.</p>
+										</div>
+									</article>
+									<article>
+										<a href="https://github.com/MarkCHarris/ames_housing_regression" class="image"><img src="images/pic01.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Home Sale Price Prediction with Regularized Multidimensional Linear Regression</h4>
+											<p>This project uses the Ames Housing Dataset to assist stakeholders with an interest in increasing home value by identifying home features that have the largest predictive relationship with sale price. Linear regression is used to design a model that can accept important features from the data set and make predictions of sale price based on those features. The model is evaluated by R2 score and root mean squared error, showing both how the model accounts for variability in price and how close we can expect estimates based on the model to be. Models were also submitted to Kaggle as part of a competitive model evaluation process.</p>
+										</div>
+									</article>
 								</div>
-							</section>
+							</div>
+						</section>
 
 						<!-- Three -->
 							<section id="three">
 								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-									</div>
+									<h3>Skills</h3>
+									<p>The tools and data science concepts I have worked with so far.</p>
+									<ul class="feature-icons">
+										<li class="icon solid fa-check">Python</li>
+										<li class="icon solid fa-check">SQL</li>
+										<li class="icon solid fa-check">Spark</li>
+										<li class="icon solid fa-check">Pandas</li>
+										<li class="icon solid fa-check">Numpy</li>
+										<li class="icon solid fa-check">Scikit-Learn</li>
+										<li class="icon solid fa-check">Keras</li>
+										<li class="icon solid fa-check">Tensorflow</li>
+										<li class="icon solid fa-check">Matplotlib</li>
+										<li class="icon solid fa-check">Seaborn</li>
+										<li class="icon solid fa-check">BeautifulSoup</li>
+										<li class="icon solid fa-check">Git</li>
+										<li class="icon solid fa-check">GitHub</li>
+										<li class="icon solid fa-check">Data Visualization</li>
+										<li class="icon solid fa-check">Regression</li>
+										<li class="icon solid fa-check">Classification</li>
+										<li class="icon solid fa-check">Clustering</li>
+										<li class="icon solid fa-check">Time Series Analysis</li>
+										<li class="icon solid fa-check">Natural Language Processing</li>
+										<li class="icon solid fa-check">Neural Networks</li>
+										<li class="icon solid fa-check">Computer Vision</li>
+										<li class="icon solid fa-check">Streamlit</li>
+										<li class="icon solid fa-check">LabVIEW</li>
+										<li class="icon solid fa-check">IGOR Pro</li>
+									</ul>
 								</div>
 							</section>
-
+						
 						<!-- Five -->
 						<!--
 							<section id="five">
@@ -414,7 +438,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									<section>
 										<h4>Image</h4>
 										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+										<span class="image fit"><img src="images/banner-new.jpg" alt="" /></span>
 										<div class="box alt">
 											<div class="row gtr-50 gtr-uniform">
 												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
@@ -443,7 +467,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; markcharris.github.io 2021. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
