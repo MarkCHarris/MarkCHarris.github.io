@@ -17,8 +17,8 @@
 			<section id="header">
 				<header>
 					<span class="image avatar"><img src="images/Headshot.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Mark C Harris, PhD</a></h1>
-					<p style="font-size: 150%;">Data Scientist</p>
+					<!-- <h1 id="logo"><a href="#">Mark C Harris, PhD</a></h1>
+					<p style="font-size: 150%;">Data Scientist</p> -->
 				</header>
 				<nav id="nav">
 					<ul>
@@ -50,8 +50,9 @@
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Welcome</h2>
-										<p>About Me</p>
+										<h2>Mark Harris</h2>
+										<h3 style="font-style: italic;">Data Scientist</h3>
+										<p><a href="./harris_mark_resume.pdf">Resume</a> | <a href="https://www.linkedin.com/in/markcharris1/">LinkedIn</a></p>
 									</header>
 									<p>As a data scientist with a background in physics and math, and as a prior educator, I leverage my experience with rigorous reasoning, experimental planning, data analysis, and communication to thoroughly understand and explain problems.  I adopt a big-picture point of view that empowers me to anticipate pitfalls and devise comprehensive problem-solving strategies.</p>
 								</div>
@@ -66,30 +67,33 @@
 									<article>
 										<a href="https://github.com/MarkCHarris/ga-capstone-snow-vision" class="image"><img src="images/3.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>Automatic Identification of Snow in Images using Machine Vision</h4>
-											<p>In this project, a Tensorflow pipeline is built that is capable of training convolutional neural nets using 100,000 images with or without falling snow. See below for details on the source of the data. The process is carried out on a personal computer with a CUDA-enabled GPU. The models are evaluated according to precision, recall, f1 score, and accuracy. Multiple snow classification thresholds are considered to optimize and tune the model to maximize the desired metric. Finally, a streamlit app is built that can run locally and use one of the saved models to predict whether an uploaded image has falling snow.</p>
+											<h4>Recognition of Falling Snow in Images using Machine Vision</h4>
+											<a href="https://github.com/MarkCHarris/ga-capstone-snow-vision"><h5 style="color:#4acaa8">View on GitHub</h5></a>
+											<p>For my capstone project with General Assembly, I built a convolutional neural net in Tensorflow to recognize falling snow in images.  It achieved 99.5% accuracy on the dataset (<a href="https://sites.google.com/view/yunfuliu/desnownet">acquired here</a>), which consisted of 100,000 images without falling snow or with falling snow added via a mask.  The neural net was built in Tensorflow and trained on a laptop with a CUDA-enabled GPU.</p>
 										</div>
 									</article>
 									<article>
 										<a href="https://github.com/MarkCHarris/food_deserts_chicago" class="image"><img src="images/food_deserts.png" alt="" /></a>
 										<div class="inner">
 											<h4>Food Desert Analysis using Regression, Classification, and Geographical Data</h4>
-											<p>I collaborated with two colleagues using Git for this project to analyze food deserts in Chicago. Our goal was to make recommendations for providing access to healthy foods within food deserts by means of local markets or mobile food trucks. We studied food deserts in Chicago using geographical analysis and analyzed their association with health problems via regression and classification.
-											</p>
+											<a href="https://github.com/MarkCHarris/food_deserts_chicago"><h5 style="color:#4acaa8">View on GitHub</h5></a>
+											<p>I collaborated with two General Assembly colleagues using Git for this project to analyze food deserts in Chicago. Our goal was to make recommendations for providing access to healthy foods within food deserts by means of local markets or mobile food trucks. We studied food deserts using geographical analysis in GeoPandas and analyzed their association with health problems via regression and classification.</p>
 										</div>
 									</article>
 									<article>
-										<a href="https://github.com/MarkCHarris/subreddit-nlp-classification" class="image"><img src="images/reddit_matrix.png" alt="" /></a>
+										<a href="https://github.com/MarkCHarris/subreddit-nlp-classification" class="image"><img src="images/future.jpg" alt="" /></a>
 										<div class="inner">
 											<h4>Natural Language Processing and Clasification of Reddit Posts</h4>
-											<p>This project aims to shed light on the differences between scientific discourse and discourse among broader audiences with demonstrated enthusiam for human progress. To achieve this, comments are collected from two very popular subreddits, Science and Futurology, using Pushsift's API. After removal of deleted comments and posts by moderator bots, natural language processing methods are used to examine top words and trends in each subreddit. Finally, multiple supervised classification methods are used to identify posts from each subreddit, testing how well different machine learning algorithms are able to distinguish between posts from these two subreddits. The models are evaluated using precision, recall, F1 score, ROC AUC. The baseline scare is 50%, since I models are fit on a 50/50 split of comments from each subreddit. This combination ensures that the best-scoring algorithms are equally successful when labelling posts as either Science or Futurology, while imbalanced algorithms are rejected. Words rated as most important by the most successful algorithms are analyzed for further insights.</p>
+											<a href="https://github.com/MarkCHarris/subreddit-nlp-classification"><h5 style="color:#4acaa8">View on GitHub</h5></a>
+											<p>This project aimed to shed light on the differences between scientific discourse and discourse among broader audiences with demonstrated enthusiasm for human progress. I collected comments from two very popular subreddits, Science and Futurology, using <a href="https://github.com/pushshift/api">Pushshift's API</a>. I then used natural language processing methods to examine top words and trends in each subreddit. I also used five supervised classification methods to predict which subreddit a post was from, testing how well different machine learning algorithms could distinguish between posts from these two subreddits. Words rated as most important by the most successful algorithms are analyzed for further insights.</p>
 										</div>
 									</article>
 									<article>
-										<a href="https://github.com/MarkCHarris/ames_housing_regression" class="image"><img src="images/pic01.jpg" alt="" /></a>
+										<a href="https://github.com/MarkCHarris/ames_housing_regression" class="image"><img src="images/home.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>Home Sale Price Prediction with Regularized Multidimensional Linear Regression</h4>
-											<p>This project uses the Ames Housing Dataset to assist stakeholders with an interest in increasing home value by identifying home features that have the largest predictive relationship with sale price. Linear regression is used to design a model that can accept important features from the data set and make predictions of sale price based on those features. The model is evaluated by R2 score and root mean squared error, showing both how the model accounts for variability in price and how close we can expect estimates based on the model to be. Models were also submitted to Kaggle as part of a competitive model evaluation process.</p>
+											<h4>Home Sale Price Prediction with Regularized Multiple Linear Regression</h4>
+											<a href="https://github.com/MarkCHarris/ames_housing_regression"><h5 style="color:#4acaa8">View on GitHub</h5></a>
+											<p>This project uses the Ames Housing Dataset to assist stakeholders with an interest in increasing home value by identifying home features that have the largest predictive relationship with sale price. I built a regularized multiple linear regression model to predict home prices based on important features from the data set to within approximately $24,000. I then identified features with the largest impact in the model to determine which have the most impact on home values.</p>
 										</div>
 									</article>
 								</div>
@@ -100,7 +104,7 @@
 							<section id="three">
 								<div class="container">
 									<h3>Skills</h3>
-									<p>The tools and data science concepts I have worked with so far.</p>
+									<p>The tools and data science concepts I have experience with.</p>
 									<ul class="feature-icons">
 										<li class="icon solid fa-check">Python</li>
 										<li class="icon solid fa-check">SQL</li>
